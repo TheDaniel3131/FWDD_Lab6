@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form action="registered.php" method="post">
+        <label for="username">Username (max 15 characters, letters and numbers only):</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{1,15}"><br>
+
+        <label for="password">Password (min 4 characters):</label>
+        <input type="password" id="password" name="password" required minlength="4"><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required minlength="4"><br>
+
+        <label for="email">E-mail (valid e-mail structure):</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="name">Name (max 50 characters):</label>
+        <input type="text" id="name" name="name" required maxlength="50"><br>
+
+        <label for="email_promotions">Do you want to receive e-mail promotions?</label>
+        <select id="email_promotions" name="email_promotions">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
